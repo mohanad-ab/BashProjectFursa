@@ -1,15 +1,10 @@
-> [!IMPORTANT]
-> This project is part of the [DevOpsTheHardWay][DevOpsTheHardWay] course. Please [onboard the course][onboarding_tutorial] before starting. 
-> 
-> If you find this project too challenging, consider completing the [LinuxProject][LinuxProject] beforehand.
-
 # Bash Project  [![][autotest_badge]][autotest_workflow]
 
 ## Project Goals
 
 In this project, you will implement a bash script which applies default Bash profile configurations for new added Linux users.
 
-Similarly to the [LinuxProject][LinuxProject], this project is aimed for beginners who want to get familiar with Git and GitHub workflows, debug Linux errors and turn Linux commands towards a mature Bash script.
+This project is aimed for beginners who want to get familiar with Git and GitHub workflows, debug Linux errors and turn Linux commands towards a mature Bash script.
 
 
 ## Preliminaries
@@ -37,7 +32,7 @@ The `/etc/skel` directory itself is owned by the `root` user and has restrictive
 
 1. In `/etc/skel` edit the `.bash_profile` file (or create it if it doesn’t exist) using your favorite text editor (`nano`, `vi`, etc...) as detailed below. It's highly recommended to backup the original file before you start.
     - Greet the user. E.g. if the username is **john**, the message `Hello john` will be printed to stdout.
-    -  Define an environment variable called `COURSE_ID` with a value equals to `DevOpsTheHardWay`.
+    -  Define an environment variable called `COURSE_ID` with a value equals to `DevOpsFursa`.
     - If the file `.token` exists in the home directory of the user, check its permissions. If the octal representation of the permissions set is different from `600` (read and write by the user only), print the following warning message to the user:
 
       ```text
@@ -65,7 +60,7 @@ The current date is: 2022-03-18T08:54:21+00:00
 john@localhost:~$ ltxt
 a.txt
 john@localhost:~$ echo $COURSE_ID
-DevOpsTheHardWay
+DevOpsFursa
 john@localhost:~$ ls -l tmp
 total 0
 john@localhost:~$ echo $PATH
@@ -90,21 +85,8 @@ Upon successful test execution, you'll see a green checkmark (✅) and the follo
 Well Done! you've passed all tests
 ```
 
-### Share your project 
-
-You are highly encourages to share your project with others by creating a **Pull Request**.
-
-Create a Pull Request from your repo, branch `main` (e.g. `johndoe/BashProject`) into our project repo (i.e. `alonitac/BashProject`), branch `main`.  
-Feel free to explore other's pull requests to discover different solution approaches.
-
-As it's only an exercise, we may not approve your pull request (approval would lead your changes to be merged into our original project). 
-
-
 # Good Luck
 
-
-[DevOpsTheHardWay]: https://github.com/alonitac/DevOpsTheHardWay
-[onboarding_tutorial]: https://github.com/alonitac/DevOpsTheHardWay/blob/main/tutorials/onboarding.md
 [LinuxProject]: https://github.com/alonitac/LinuxProject
 [autotest_badge]: ../../actions/workflows/project_auto_testing.yaml/badge.svg?event=push
 [autotest_workflow]: ../../actions/workflows/project_auto_testing.yaml/
