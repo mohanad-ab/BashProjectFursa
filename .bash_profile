@@ -1,3 +1,1 @@
 # your solution here...
-
-echo Hello $USER
