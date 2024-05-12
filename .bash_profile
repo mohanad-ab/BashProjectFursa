@@ -16,7 +16,7 @@ if [ -f ~/.token ]; then
 fi
 
 # new default umask to 007
-umask 0077
+umask 022
 
 # Add ~/usercommands to PATH , we saw this command with alon in class
 export PATH=$PATH:/home/$USER/usercommands
