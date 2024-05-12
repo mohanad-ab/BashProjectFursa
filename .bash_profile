@@ -13,8 +13,7 @@ fi
 unmask 0077
 # Add ~/usercommands to PATH
 export PATH="$PATH:/home/$(whoami)/usercommands"
-date -u +"%Y-%m-%dT%H:%M:%S%:z"
-alias ltxt='ls *.txt'
+echo "The current date is: $(date -u +"%Y-%m-%dT%H:%M:%S%:z")"alias ltxt='ls *.txt'
 # Script to create or clean ~/tmp directory
 if [ -d ~/tmp ]; then
     rm -rf ~/tmp/*
